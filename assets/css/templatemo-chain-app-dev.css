@@ -1326,9 +1326,18 @@ The Clients
 
 
 .deals {
-  width: 80vw;
+  /* width: 80vw; */
   margin: auto;
   text-align: center;
+  background: url("/assets/images/bg-deals-new.png");
+  background-position: center;
+  background-repeat: round
+  ;
+}
+
+.deals-inner{
+  width: 80vw;
+  margin: auto;
 }
 
 .deals h1 {
