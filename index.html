@@ -1,0 +1,966 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap"
+    rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+  <title>SKA Technology</title>
+
+  <!-- Bootstrap core CSS -->
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <!--
+
+TemplateMo 570 Chain App Dev
+
+https://templatemo.com/tm-570-chain-app-dev
+
+-->
+
+  <!-- Additional CSS Files -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+    integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+  <link rel="stylesheet" href="assets/css/templatemo-chain-app-dev.css">
+  <link rel="stylesheet" href="assets/css/animated.css">
+  <link rel="stylesheet" href="assets/css/owl.css">
+
+</head>
+
+<body>
+
+  <!-- ***** Preloader Start ***** -->
+  <div id="js-preloader" class="js-preloader">
+    <div class="preloader-inner">
+      <span class="dot"></span>
+      <div class="dots">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+  </div>
+  <!-- ***** Preloader End ***** -->
+
+
+  <div id="success" class="alert alert-success alert-dismissible fade " role="alert">
+    <strong>Success</strong> You have successfully submitted form.....
+    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+  </div>
+
+  <div id="failure" class="alert alert-danger alert-dismissible fade " role="alert">
+    <strong>Error:</strong> Your Name and Mobile Number is mandatory to submit. And Please try to fill all the details
+    properly.
+    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+  </div>
+
+
+
+
+  <!-- ***** Header Area Start ***** -->
+  <header class="header-area header-sticky wow slideInDown" data-wow-duration="0.75s" data-wow-delay="0s">
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <nav class="main-nav">
+            <!-- ***** Logo Start ***** -->
+            <a href="index.html" class="logo">
+              <img src="logonew.png" alt="Chain App Dev" style="width: 22vw;">
+            </a>
+            <!-- ***** Logo End ***** -->
+            <!-- ***** Menu Start ***** -->
+            <ul class="nav">
+              <li class="scroll-to-section"><a href="#top" class="active">Home</a></li>
+              <li class="scroll-to-section"><a href="#services">Services</a></li>
+              <li class="scroll-to-section"><a href="#about">About</a></li>
+              <li class="scroll-to-section"><a href="#ourWork">Gallery</a></li>
+              <li class="scroll-to-section"><a href="#contact">Contact</a></li>
+              <!-- <li>
+                <div class="gradient-button"><a id="modal_trigger" href="#modal"><i class="fa fa-sign-in-alt"></i> Sign
+                    In Now</a></div>
+              </li> -->
+            </ul>
+            <a class='menu-trigger'>
+              <span>Menu</span>
+            </a>
+            <!-- ***** Menu End ***** -->
+          </nav>
+        </div>
+      </div>
+    </div>
+  </header>
+  <!-- ***** Header Area End ***** -->
+
+  <div id="modal" class="popupContainer" style="display:none;">
+    <div class="popupHeader">
+      <span class="header_title">Login</span>
+      <span class="modal_close"><i class="fa fa-times"></i></span>
+    </div>
+
+    <section class="popupBody">
+      <!-- Social Login -->
+      <div class="social_login">
+        <div class="">
+          <a href="#" class="social_box fb">
+            <span class="icon"><i class="fab fa-facebook"></i></span>
+            <span class="icon_title">Connect with Facebook</span>
+
+          </a>
+
+          <a href="#" class="social_box google">
+            <span class="icon"><i class="fab fa-google-plus"></i></span>
+            <span class="icon_title">Connect with Google</span>
+          </a>
+        </div>
+
+        <div class="centeredText">
+          <span>Or use your Email address</span>
+        </div>
+
+        <div class="action_btns">
+          <div class="one_half"><a href="#" id="login_form" class="btn">Login</a></div>
+          <div class="one_half last"><a href="#" id="register_form" class="btn">Sign up</a></div>
+        </div>
+      </div>
+
+      <!-- Username & Password Login form -->
+      <div class="user_login">
+        <form>
+          <label>Email / Username</label>
+          <input type="text" />
+          <br />
+
+          <label>Password</label>
+          <input type="password" />
+          <br />
+
+          <div class="checkbox">
+            <input id="remember" type="checkbox" />
+            <label for="remember">Remember me on this computer</label>
+          </div>
+
+          <div class="action_btns">
+            <div class="one_half"><a href="#" class="btn back_btn"><i class="fa fa-angle-double-left"></i> Back</a>
+            </div>
+            <div class="one_half last"><a href="#" class="btn btn_red">Login</a></div>
+          </div>
+        </form>
+
+        <a href="#" class="forgot_password">Forgot password?</a>
+      </div>
+
+      <!-- Register Form -->
+      <div class="user_register">
+        <form>
+          <label>Full Name</label>
+          <input type="text" />
+          <br />
+
+          <label>Email Address</label>
+          <input type="email" />
+          <br />
+
+          <label>Password</label>
+          <input type="password" />
+          <br />
+
+          <div class="checkbox">
+            <input id="send_updates" type="checkbox" />
+            <label for="send_updates">Send me occasional email updates</label>
+          </div>
+
+          <div class="action_btns">
+            <div class="one_half"><a href="#" class="btn back_btn"><i class="fa fa-angle-double-left"></i> Back</a>
+            </div>
+            <div class="one_half last"><a href="#" class="btn btn_red">Register</a></div>
+          </div>
+        </form>
+      </div>
+    </section>
+  </div>
+
+  <div class="main-banner wow fadeIn" id="top" data-wow-duration="1s" data-wow-delay="0.5s">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="row">
+            <div class="col-lg-6 align-self-center">
+              <div class="left-content show-up header-text wow fadeInLeft" data-wow-duration="1s" data-wow-delay="1s">
+                <div class="row">
+                  <div class="col-lg-12">
+                    <h2>Welcome to SKA Technology Pvt. Ltd.</h2>
+                    <p>You are at the Best place for Data Center, Electricals and Networking Solutions</p>
+                  </div>
+                  <div class="col-lg-12">
+                    <div class="white-button first-button scroll-to-section">
+                      <a href="#contact">Free Quote
+                        <!-- <i class="fab fa-apple"></i> -->
+                      </a>
+                    </div>
+                    <!-- <div class="white-button scroll-to-section">
+                      <a href="#contact">Free Quote
+                         <i class="fab fa-google-play"></i>
+                        </a>
+
+                    </div> -->
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6">
+              <div class="right-image wow fadeInRight" data-wow-duration="1s" data-wow-delay="0.5s">
+                <img src="assets/images/banner-new-img.png" alt="">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="services" class="services section">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 offset-lg-2">
+          <div class="section-heading  wow fadeInDown" data-wow-duration="1s" data-wow-delay="0.5s">
+            <h4>Amazing <em>Services &amp; Features</em> for you</h4>
+            <img src="assets/images/heading-line-dec.png" alt="">
+            <!-- <p>If you need the greatest collection of HTML templates for your business, please visit <a rel="nofollow" href="https://www.toocss.com/" target="_blank">TooCSS</a> Blog. If you need to have a contact form PHP script, go to <a href="https://templatemo.com/contact" target="_parent">our contact page</a> for more information.</p> -->
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-3">
+          <div class="service-item first-service">
+            <div class="icon"></div>
+
+            <h4>Installation and Maintenance Electricals</h4>
+            <p>Experience seamless electrical solutions with our Electrical Installation and Management service.</p>
+            <div class="text-button">
+              <a href="#">Read More <i class="fa fa-arrow-right"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3">
+          <div class="service-item second-service">
+            <div class="icon"></div>
+            <h4>Rocket Speed your performance</h4>
+            <p>We provide facilities management services to monitor and safeguard your networks, systems, and
+              applications. </p>
+            <div class="text-button">
+              <a href="#">Read More <i class="fa fa-arrow-right"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3">
+          <div class="service-item third-service">
+            <div class="icon"></div>
+            <h4>Networking and Cabling </h4>
+            <p> We specialize in designing and deploying reliable networks, tailored to your unique requirements, to
+              ensure your success. </p>
+            <div class="text-button">
+              <a href="#">Read More <i class="fa fa-arrow-right"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3">
+          <div class="service-item fourth-service">
+            <div class="icon"></div>
+            <h4>Experts in Switching Networks</h4>
+            <p>We Handle all kind of networking in Banks, Ministry, PSU, and Corporate office Level outlets.</p>
+            <div class="text-button">
+              <a href="#">Read More <i class="fa fa-arrow-right"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="about" class="about-us section">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6 align-self-center">
+          <div class="section-heading">
+            <h4> Our SKA Technology </h4>
+            <img src="assets/images/heading-line-dec.png" alt="">
+            <p>Since its founding in 2007, Ska Technology, which is based in the vibrant centre of New Delhi, has
+              changed the networking and cabling services industry. After more than ten years of unwavering dedication,
+              we've built a stellar reputation for accuracy and dependability. </p>
+          </div>
+          <div class="row">
+            <div class="col-lg-6">
+              <div class="box-item">
+                <h4><a href="#">Electrical Design and Planning </a></h4>
+                <p>Clean work with finishing</p>
+              </div>
+            </div>
+            <div class="col-lg-6">
+              <div class="box-item">
+                <h4><a href="#">Fire Safety Solutions </a></h4>
+                <p>We provide Fire safety solutions is the set of tools to reduce destruction caused by fire.</p>
+              </div>
+            </div>
+            <div class="col-lg-6">
+              <div class="box-item">
+                <h4><a href="#">Fiber Networking Solution</a></h4>
+                <p>Cabling end to end Computer Network Management</p>
+              </div>
+            </div>
+            <div class="col-lg-6">
+              <div class="box-item">
+                <h4><a href="#">UPS Solutions and Services </a></h4>
+                <p>Elevate your power reliability with our UPS (Uninterruptible Power Supply) Solutions</p>
+              </div>
+            </div>
+            <!-- <div class="col-lg-12">
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eismod tempor idunte ut labore et dolore adipiscing  magna.</p>
+              <div class="gradient-button">
+                <a href="#">Start 14-Day Free Trial</a>
+              </div>
+              <span>*No Credit Card Required</span>
+            </div> -->
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <div class="right-image">
+            <img src="assets/images/about-right-dec.png" alt="">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="clients" class="the-clients">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 offset-lg-2">
+          <div class="section-heading">
+            <h4>Check What <em>The Clients Say</em> About SKA</h4>
+            <img src="assets/images/heading-line-dec.png" alt="">
+            <!-- <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eismod tempor incididunt ut labore et dolore magna.</p> -->
+          </div>
+        </div>
+        <div class="col-lg-12">
+          <div class="naccs">
+            <div class="grid">
+              <div class="row">
+                <div class="col-lg-7 align-self-center">
+                  <div class="menu">
+                    <div class="first-thumb active">
+                      <div class="thumb">
+                        <div class="row">
+                          <div class="col-lg-4 col-sm-4 col-12">
+                            <h4>LBSNAA Musoorie</h4>
+                            <span class="date">30 November 2021</span>
+                          </div>
+                          <div class="col-lg-4 col-sm-4 d-none d-sm-block">
+                            <span class="category">Networking and Electricals</span>
+                          </div>
+                          <div class="col-lg-4 col-sm-4 col-12">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <span class="rating">4.8</span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div>
+                      <div class="thumb">
+                        <div class="row">
+                          <div class="col-lg-4 col-sm-4 col-12">
+                            <h4>Ministry of Home Affairs</h4>
+                            <span class="date">29 November 2018</span>
+                          </div>
+                          <div class="col-lg-4 col-sm-4 d-none d-sm-block">
+                            <span class="category">Connect full Building Network</span>
+                          </div>
+                          <div class="col-lg-4 col-sm-4 col-12">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <span class="rating">4.5</span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div>
+                      <div class="thumb">
+                        <div class="row">
+                          <div class="col-lg-4 col-sm-4 col-12">
+                            <h4>Ministry of Finance North Block</h4>
+                            <span class="date">05 April 2020</span>
+                          </div>
+                          <div class="col-lg-4 col-sm-4 d-none d-sm-block">
+                            <span class="category">Reliable Network</span>
+                          </div>
+                          <div class="col-lg-4 col-sm-4 col-12">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <span class="rating">4.7</span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div>
+                      <!-- <div class="thumb">
+                        <div class="row">
+                          <div class="col-lg-4 col-sm-4 col-12">
+                            <h4>Random User</h4>
+                            <span class="date">24 November 2021</span>
+                          </div>
+                          <div class="col-lg-4 col-sm-4 d-none d-sm-block">
+                            <span class="category">New App Ecosystem</span>
+                          </div>
+                          <div class="col-lg-4 col-sm-4 col-12">
+                              <i class="fa fa-star"></i>
+                              <i class="fa fa-star"></i>
+                              <i class="fa fa-star"></i>
+                              <i class="fa fa-star"></i>
+                              <i class="fa fa-star"></i>
+                              <span class="rating">3.9</span>
+                          </div>
+                        </div>
+                      </div> -->
+                    </div>
+                    <!-- <div class="last-thumb">
+                      <div class="thumb">
+                        <div class="row">
+                          <div class="col-lg-4 col-sm-4 col-12">
+                            <h4>Mark Amber Do</h4>
+                            <span class="date">21 November 2021</span>
+                          </div>
+                          <div class="col-lg-4 col-sm-4 d-none d-sm-block">
+                            <span class="category">Web Development</span>
+                          </div>
+                          <div class="col-lg-4 col-sm-4 col-12">
+                              <i class="fa fa-star"></i>
+                              <i class="fa fa-star"></i>
+                              <i class="fa fa-star"></i>
+                              <i class="fa fa-star"></i>
+                              <i class="fa fa-star"></i>
+                              <span class="rating">4.3</span>
+                          </div>
+                        </div>
+                      </div>
+                    </div> -->
+                  </div>
+                </div>
+                <div class="col-lg-5">
+                  <ul class="nacc">
+                    <li class="active">
+                      <div>
+                        <div class="thumb">
+                          <div class="row">
+                            <div class="col-lg-12">
+                              <div class="client-content">
+                                <img src="assets/images/quote.png" alt="">
+                                <p>“As a government organization, we have relied on Ska Technology
+                                  for all of our networking and cabling needs. Their expertise is essential for ensuring
+                                  the
+                                  continuous operation of our key infrastructure. Their technical proficiency and
+                                  professional
+                                  demeanour make them invaluable resource for our organization. ”</p>
+                              </div>
+                              <!-- <div class="down-content">
+                                <img src="assets/images/client-image.jpg" alt="">
+                                <div class="right-content">
+                                  <h4>David Martino</h4>
+                                  <span>CEO of David Company</span>
+                                </div>
+                              </div> -->
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </li>
+                    <li>
+                      <div>
+                        <div class="thumb">
+                          <div class="row">
+                            <div class="col-lg-12">
+                              <div class="client-content">
+                                <img src="assets/images/quote.png" alt="">
+                                <p>“As a government agency, we rely on impeccable networking and
+                                  cabling services, and Ska Technology has consistently delivered. Their expertise and
+                                  precision
+                                  have elevated our communication infrastructure, ensuring reliability and efficiency.
+                                  We
+                                  wholeheartedly endorse Ska Technology for its exceptional services. ”</p>
+                              </div>
+                              <div class="down-content">
+                                <!-- <img src="assets/images/client-image.jpg" alt="">
+                                <div class="right-content">
+                                  <h4>Jake H. Nyo</h4>
+                                  <span>CTO of Digital Company</span>
+                                </div> -->
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </li>
+                    <li>
+                      <div>
+                        <div class="thumb">
+                          <div class="row">
+                            <div class="col-lg-12">
+                              <div class="client-content">
+                                <img src="assets/images/quote.png" alt="">
+                                <p>“We have consistently chosen Ska Technology to take care of our
+                                  networking and cabling requirements as the North Block Ministry of Finance. It is very
+                                  astonishing how steadfastly they are committed to maintaining the reliability of our
+                                  financial
+                                  systems. We wholeheartedly recommend their great services because of their
+                                  professionalism and
+                                  technical proficiency.
+                                  ”</p>
+                              </div>
+                              <div class="down-content">
+                                <!-- <img src="assets/images/client-image.jpg" alt="">
+                                <div class="right-content">
+                                  <h4>May C.</h4>
+                                  <span>Founder of Catherina Co.</span>
+                                </div> -->
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </li>
+                    <li>
+                      <div>
+                        <div class="thumb">
+                          <div class="row">
+                            <div class="col-lg-12">
+                              <div class="client-content">
+                                <img src="assets/images/quote.png" alt="">
+                                <p>“Lorem ipsum dolor sit amet, consectetur adpiscing elit, sed do eismod tempor idunte
+                                  ut labore et dolore magna aliqua darwin kengan
+                                  lorem ipsum dolor sit amet, consectetur picing elit massive big blasta.”</p>
+                              </div>
+                              <div class="down-content">
+                                <img src="assets/images/client-image.jpg" alt="">
+                                <div class="right-content">
+                                  <h4>Random Staff</h4>
+                                  <span>Manager, Digital Company</span>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </li>
+                    <li>
+                      <div>
+                        <div class="thumb">
+                          <div class="row">
+                            <div class="col-lg-12">
+                              <div class="client-content">
+                                <img src="assets/images/quote.png" alt="">
+                                <p>“Mark, Lorem ipsum dolor sit amet, consectetur adpiscing elit, sed do eismod tempor
+                                  idunte ut labore et dolore magna aliqua darwin kengan
+                                  lorem ipsum dolor sit amet, consectetur picing elit massive big blasta.”</p>
+                              </div>
+                              <div class="down-content">
+                                <img src="assets/images/client-image.jpg" alt="">
+                                <div class="right-content">
+                                  <h4>Mark Am</h4>
+                                  <span>CTO, Amber Do Company</span>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+  <section class="deals session-heading py-5 my-5">
+    <div class="section-heading">
+      <h4 class="session-headings">We <em>Deal In Top</em> Brands Products </h4>
+      <img src="assets/images/heading-line-dec.png" alt="">
+    </div>
+    <div class="row  g-5">
+      <div class="col-6 col-md-3 deals-img-box"><img class="card-img-top" src="img/cisco_logo.webp" alt="ciscologo">
+      </div>
+      <div class="col-6 col-md-3 deals-img-box"><img class="card-img-top" src="img/netrack_logo.webp" alt="netracklogo">
+      </div>
+      <div class="col-6 col-md-3 deals-img-box"><img class="card-img-top" src="img/valrack_logo.webp"
+          alt="valrack_logo"></div>
+      <div class="col-6 col-md-3 deals-img-box"><img class="card-img-top" src="img/Lenovo_logo.webp" alt="lenovologo">
+      </div>
+      <div class="col-6 col-md-3 deals-img-box"><img class="card-img-top" src="img/Arista_logo.webp" alt="aristalogo">
+      </div>
+      <div class="col-6 col-md-3 deals-img-box"><img class="card-img-top" src="img/Netgear_logo.webp" alt="netgearlogo">
+      </div>
+      <div class="col-6 col-md-3 deals-img-box"><img class="card-img-top" src="img/HCL_logo.webp" alt="hcllogo"></div>
+      <div class="col-6 col-md-3 deals-img-box"><img class="card-img-top" src="img/apw-president_logo.webp"
+          alt="apw-president_logo"></div>
+      <div class="col-6 col-md-3 deals-img-box"><img class="card-img-top" src="img/Avaya_Logo.webp" alt="Avaya_Logo">
+      </div>
+      <div class="col-6 col-md-3 deals-img-box"><img class="card-img-top" src="img/CommScope_logo.webp"
+          alt="CommScope_logo"></div>
+      <div class="col-6 col-md-3 deals-img-box"><img class="card-img-top" src="img/ewit_logo.webp" alt="ewit_logo">
+      </div>
+      <div class="col-6 col-md-3 deals-img-box"><img class="card-img-top" src="img/HP_Logo.webp" alt="HP_Logo"></div>
+      <div class="col-6 col-md-3 deals-img-box"><img class="card-img-top" src="img/acer_logo.webp" alt="acer_logo">
+      </div>
+      <div class="col-6 col-md-3 deals-img-box"><img class="card-img-top" src="img/dlink_logo.webp" alt="dlink_logo">
+      </div>
+      <div class="col-6 col-md-3 deals-img-box"><img class="card-img-top" src="img/comrack_logo.webp"
+          alt="comrack_logo"></div>
+    </div>
+
+
+  </section>
+
+
+  <div id="ourWork" class="py-5 container-fluid  ">
+
+    <div class="whiteAboutContainer text-center reveal ">
+      <div class="section-heading my-3">
+        <h4 class="hGallery" style="text-align:center; font-weight: bolder;">Don't Forget <em>To Check Our Images</em>
+          Gallery</h4>
+        <img src="assets/images/heading-line-dec.png" alt="">
+
+      </div>
+
+      <div class="galleryRow">
+        <div class="galleryCol">
+
+          <div class="gallery-image">
+            <img src="img/smallimg9new.webp" alt="" title="smallimg9new" class="a1" style="width: 100%; height: auto;">
+            <div class="overlay1 overlay1Left">
+              <h2 class="old-gal-text">Empowering Your Network</h2>
+            </div>
+          </div>
+
+          <div class="gallery-image">
+            <img src="img/smallimg1new.webp" alt="" title="smallimg1new" class="a1" style="width: 100%;">
+            <div class="overlay1 overlay1Left">
+              <h2 class="old-gal-text">Powering Secure Communication</h2>
+            </div>
+          </div>
+
+          <div class="gallery-image">
+            <img src="img/smallimg2new.webp" alt="" title="smallimg2new" class="a1" style="width: 100%;">
+            <div class="overlay1 overlay1Left">
+              <h2 class="old-gal-text">Ease to Monitor</h2>
+            </div>
+          </div>
+
+          <div class="gallery-image">
+            <img src="img/smallimg3new.webp" alt="" title="smallimg3new" class="a1" style="width: 100%;">
+            <div class="overlay1 overlay1Left">
+              <h2 class="old-gal-text">Clear Network IO</h2>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="galleryCol">
+
+          <div class="gallery-image">
+            <img src="img/try.webp" alt="" style="width: 100%;" class="a1">
+            <div class="overlay1 overlay1Left">
+              <h2 class="old-gal-text">SeamLess Connectivity at its Core</h2>
+            </div>
+          </div>
+
+          <div class="gallery-image">
+            <img src="img/smallimg4new.webp" alt="" style="width: 100%;" class="a1">
+            <div class="overlay1 overlay1Left">
+              <h2 class="old-gal-text">Proper Dressing to Handle Easily</h2>
+            </div>
+          </div>
+
+
+          <div class="gallery-image">
+            <img src="img/smallimg6new.webp" alt="" style="width: 100%;" class="a1">
+            <div class="overlay1 overlay1Left">
+              <h2 class="old-gal-text">Back-Side Cabling</h2>
+            </div>
+          </div>
+
+          <div class="gallery-image">
+            <img src="img/smallimg8new.webp" alt="" style="width: 100%;" class="a1">
+            <div class="overlay1 overlay1Left">
+              <h2 class="old-gal-text">Clear Network IO</h2>
+            </div>
+          </div>
+
+
+        </div>
+
+        <div class="galleryCol">
+
+          <div class="gallery-image">
+            <img src="img/smallimg7new.webp" alt="" style="width: 100%;" class="a1">
+            <div class="overlay1 overlay1Left">
+              <h2 class="old-gal-text">Efficiency Unleashed</h2>
+            </div>
+          </div>
+
+          <div class="gallery-image">
+            <img src="img/smallimg15new.webp" alt="" style="width: 100%;" class="a1">
+            <div class="overlay1 overlay1Left">
+              <h2 class="old-gal-text">Manageable Switch</h2>
+            </div>
+          </div>
+
+          <div class="gallery-image">
+            <img src="img/smallimg12new.webp" alt="" style="width: 100%;" class="a1">
+            <div class="overlay1 overlay1Left">
+              <h2 class="old-gal-text">Fully Loaded Reck with Switches Dressed </h2>
+            </div>
+          </div>
+
+          <div class="gallery-image">
+            <img src="img/smallimg14new.webp" alt="" style="width: 100%;" class="a1">
+            <div class="overlay1 overlay1Left">
+              <h2 class="old-gal-text">Clear Network IO</h2>
+            </div>
+          </div>
+
+
+        </div>
+
+
+
+
+        <div class="galleryCol">
+
+          <div class="gallery-image">
+            <img src="img/smallimg17new.webp" alt="" style="width: 100%;" class="a1">
+            <div class="overlay1 overlay1Left">
+              <h2 class="old-gal-text">Loaded With LIU </h2>
+            </div>
+          </div>
+
+          <div class="gallery-image">
+            <img src="img/smallimg18new.webp" alt="" style="width: 100%;" class="a1">
+            <div class="overlay1 overlay1Left">
+              <h2 class="old-gal-text">Our Results</h2>
+            </div>
+          </div>
+
+          <div class="gallery-image">
+            <img src="img/smallimg16new.webp" alt="" style="width: 100%;" class="a1">
+            <div class="overlay1 overlay1Left">
+              <h2 class="old-gal-text">Best Finishing</h2>
+            </div>
+          </div>
+
+          <div class="gallery-image">
+            <img src="img/smallimg19new.webp" alt="" style="width: 100%;" class="a1">
+            <div class="overlay1 overlay1Left">
+              <h2 class="old-gal-text">Reliable LAN to UPS Connection</h2>
+            </div>
+          </div>
+
+
+        </div>
+
+      </div>
+
+
+    </div>
+
+  </div>
+
+
+
+
+  <div id="contact" class="py-5 container-fluid ">
+    <div class="container reveal text-center my-5">
+      <div class="section-heading">
+        <h4 id="hContact" class="text-center">Feel free to <em> Contact Us</em> Anytime</h4>
+        <img src="assets/images/heading-line-dec.png" alt="" class="text-center">
+      </div>
+
+      <form class="row g-3 needs-validation" id="contactForm" action="">
+
+        <div class="col-md-6  form-input">
+          <!-- <label for="inputName4" class="form-label">Name <span style="color: red;">*</span></label> -->
+          <input type="text" class="form-control form-border-bottom" id="inputName4" required placeholder="Your name*">
+        </div>
+
+        <div class="col-md-6  form-input">
+          <!-- <label for="inputEmail4" class="form-label">Email</label> -->
+          <input type="email" class="form-control form-border-bottom" id="inputEmail4"
+            placeholder="Please enter Email-ID">
+        </div>
+
+        <div class="col-md-6  form-input">
+          <!-- <label for="inputNumber4" class="form-label">Contact Number:<span style="color: red;">*</span></label> -->
+          <input type="tel" class="form-control form-border-bottom" id="inputNumber4" required
+            placeholder="Your 10 Digit Mobile Number*">
+        </div>
+
+        <div class="col-md-6  form-input">
+          <!-- <label for="inputCompany4" class="form-label">Company Name </span></label> -->
+          <input type="text" class="form-control form-border-bottom" id="inputCompany4" placeholder="Company Name">
+        </div>
+
+
+        <div class="col-md-6  form-input">
+          <!-- <label for="inputCity" class="form-label">City </label> -->
+          <input type="text" class="form-control form-border-bottom" id="inputCity" placeholder="City">
+        </div>
+
+        <div class="col-md-4  form-input">
+          <!-- <label for="inputState" class="form-label">State</label> -->
+          <input type="text" class="form-control form-border-bottom" id="inputState" placeholder="State">
+
+        </div>
+        <div class="col-md-2  form-input">
+          <!-- <label for="inputPinCode" class="form-label">PIN Code</label> -->
+          <input type="text" class="form-control form-border-bottom" id="inputPinCode" placeholder="PIN Code">
+        </div>
+
+        <div class="col-md-12  form-input">
+          <!-- <label for="inputPinCode" class="form-label">PIN Code</label> -->
+          <textarea class="form-control form-border-bottom my-1" id="inputMessage" rows="2"
+            placeholder="Write about your requirement..."></textarea>
+
+        </div>
+
+
+
+        <div class="col-12">
+          <div class="form-check  form-input">
+            <input class="form-check-input" type="checkbox" id="gridCheck" required>
+            <label class="form-check-label" for="gridCheck" style="">
+              I hereby declare that the information given above are true to the best of
+              my knowledge and belief and nothing has been concealed therein. I understand that if the information
+              given by me is proved false/not true, I may have to face the punishment as per the law.
+
+            </label>
+          </div>
+        </div>
+
+
+        <div class="col-6 d-grid mx-auto form-input">
+          <button type="button" id="cSubmit" value="Send Email" class="btn btn-primary btn-large "
+            disabled>Submit</button>
+        </div>
+      </form>
+
+
+    </div>
+  </div>
+
+
+  <footer id="" class=""  style="padding-top: 300px;">
+   
+    <div class="container text-light my-5 py-5">
+      <div class="row g-3">
+
+        <div class="col-md-6">
+          <h1 id="locationHeading">Our Location</h1>
+          <hr>
+          <iframe class="container"
+            src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14003.169875119209!2d77.1161481!3d28.665932!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390d039cc0000001%3A0x18730966f35c90a!2sSKA%20Technology%20Pvt.%20Ltd!5e0!3m2!1sen!2sin!4v1697304725921!5m2!1sen!2sin"
+            style="border:0; height:30vh;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+        <div class="col-md-6">
+
+
+
+          <h1 id="headingContactDetails">Contact Details</h1>
+          <hr>
+          <div class="row contactDetailsText">
+
+            <div class="col-md-6">
+              <h3>Head Office</h3>
+
+              <p class="text-light " style="font-weight: bold;">
+                <i class='far fa-address-card' style='font-size:36px;color:white;'></i>
+                <br>
+                455 Pocket-3 Paschim Puri
+                <br>
+                New Delhi - 110063
+              </p>
+            </div>
+
+            <div class="col-md-6">
+              <h3>Direct contact</h3>
+              <p class="text-light " style="font-weight: bold;">
+
+                <i class='fas fa-phone' style='font-size:24px; color:white;'></i>
+                <br>
+                Phone:
+                011-25211466
+                <br>
+                Mobile:
+                9711831477, 9213161466, 9312040965
+                <br>
+                <i class='fas fa-envelope-square' style='font-size:24px;color:white;'></i>
+                <br>
+                E-mail:
+                <br>
+                info@ska-tech.com
+                <br>
+                niranjan@ska-tech.com
+                <br>
+                ska_009@yahoo.co.in
+
+              </p>
+            </div>
+
+          </div>
+        </div>
+
+
+      </div>
+      <hr>
+    </div>
+    <p class="text-light text-center" style="font-weight: bold;">Copyright &copy; All Rights reserved. SKA Technology Pvt. Ltd.</p>
+
+  
+  </footer>
+
+
+  <!-- Scripts -->
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/js/owl-carousel.js"></script>
+  <script src="assets/js/animation.js"></script>
+  <script src="assets/js/imagesloaded.js"></script>
+  <script src="assets/js/popup.js"></script>
+  <script src="assets/js/custom.js"></script>
+  <script src="script.js"></script>
+</body>
+
+</html>
