@@ -263,7 +263,7 @@ function sendEmail() {
 
 
   Email.send(
-    // Your security token is 29ab9f15-c7c6-4873-9919-4608fca03da4 Please take note of this.
+    
 
     {
 
